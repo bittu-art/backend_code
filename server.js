@@ -80,6 +80,10 @@ app.post("/api/events", async (req, res) => {
   }
 });
 
+app.get("/",(req,res)=>{
+  return res.json({"status":"working"})
+})
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
